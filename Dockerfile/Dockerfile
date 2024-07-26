@@ -43,7 +43,7 @@ RUN usermod -aG sudo orp \
 #########
 WORKDIR /home/orp
 USER orp
-RUN git clone https://github.com/macmanes-lab/Oyster_River_Protocol.git && cd Oyster_River_Protocol && sudo make && sed -i  "s_ubuntu_orp_g" /home/orp/Oyster_River_Protocol/software/config.ini
+RUN git clone https://github.com/connshaojunzhang/Oyster_River_Protocol.git && cd Oyster_River_Protocol && sudo make && sed -i  "s_ubuntu_orp_g" /home/orp/Oyster_River_Protocol/software/config.ini
 
 #########
 ### Path
